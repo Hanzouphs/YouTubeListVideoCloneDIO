@@ -1,0 +1,249 @@
+@import url('reset.css');
+
+#container{
+    display: grid;
+    grid-template-columns:220px;
+    grid-template-rows: 218px, 100%;
+    grid-template-areas: "header header"
+    "aside main";
+}
+#menu{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 24px;
+    gap: 32px;
+    position: absolute;
+    width: 100%;
+    height: 50px;
+    left: 0px;
+    top: 0px;
+    background-color: #fff;
+    position: fixed;
+    z-index: 50;
+}
+#shorts{
+    margin: 30px 70px 30px 70px;
+    background-color: #b4afaf;
+    height: 4px;
+}
+#shorts-icon{
+    display: flex;
+    align-items: center;
+    width: 95px;
+    margin-left: 80px;
+    font-size: 90%;
+}
+#shorts-icon svg{
+    margin-right: 5px;
+}
+header{
+    height: 50px;
+    grid-area: header;
+
+}
+aside{
+    grid-area: aside;
+    padding-top: 20px;
+    height: 90vh;
+}
+main{
+    grid-area: main;
+}
+
+.container{
+    
+}
+.menu-item1{  
+    margin-top: 5px;
+    margin-left: -5px;
+    width: 375px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+}
+.menu-item1 svg{
+    margin-right: 5px;
+}
+.pic {
+    width: 115px;
+    padding-top: 2px;
+    cursor: pointer;
+}
+.pic2{
+    width: 33px;
+    border-radius: 50%;
+    margin-top: 4px;
+}
+.aside-img{
+    margin-left: 10px;
+    width: 24px;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+.menu-item2{
+    display: inline-block;
+    width: 540px;
+    margin-left: -15px;
+    height: 40px;
+    border-radius: 20px 0px 0px 20px;
+    background: #FFFFFF;
+    border: 1px solid #CCCCCC;
+    position: relative;
+    cursor: text;
+}
+.board{
+    display: flex;
+    position: absolute;
+    right: 6px;
+    top: 8px;
+    cursor: pointer;
+}
+.menu-item-lupa{
+    display: inline-block;
+    width: 65px;
+    height: 40px;
+    background: #f5f5f5;
+    border-radius: 0px 20px 20px 0px;
+    border: 1px solid #CCCCCC;
+    position: absolute;   
+}
+.lupa{
+    display: flex;
+    justify-content: center;
+    padding-top: 10px;
+    cursor: pointer;
+
+}
+.menu-item-lupa:hover{
+    background: #e4e1e1;
+    cursor: pointer;
+}
+.mic{
+    width: 45px;
+    height: 45px;
+    margin-top: 5px;
+    margin-bottom: 2px;
+    background-color: #fff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+.mic:hover{
+    background-color: #f5f5f5;
+}
+.absolute{
+    display: flex;
+    position: relative;
+    right: 182px;
+}
+.menu-item3{
+    
+    width: 160px;
+    height: 25px;
+    margin-top: 5px;
+    margin-right: -10px;
+    background: #FFFFFF;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.itens-hover:hover{
+    margin-bottom: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    background-color:  #f5f5f5;
+    cursor: pointer;
+    border-radius: 50%;   
+}
+.text{
+    margin-top: 9px;
+    display: inline-block;
+    margin-left: 5px;
+    padding-left: 13px;
+    color: #777676;
+    text-decoration: none;
+}
+hr{
+    box-sizing: content-box;
+    margin:15px 10px 15px 10px;
+}
+#aside h3{
+    margin-top: 10px;
+    margin-left: 25px;
+    margin-bottom: 5px;
+    font-size: 99%;
+}
+h6{
+    display: inline-block;
+    margin-left: -5px;
+    margin-bottom: 17px;
+}
+a{
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #000;
+}
+ul{
+    box-sizing: content-box;
+    list-style: none;
+    padding: 7px;
+    margin-left: 10px;
+    letter-spacing: -0.4px;
+}
+ul:hover{
+    background-color: #f5f5f5;
+    border-radius: 10px;
+}
+.aside-icons{
+    margin-right: 20px;
+    margin-left: 5px;
+    padding-left: 2px;
+    pointer-events: none;
+    display: inline-block;
+    width: 14%;
+    height: 14%;
+}
+.main-video{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 30px 70px 30px 70px;
+    
+}
+.img-main{
+    display: flex;
+    border-radius: 15px;
+    width: 98%;
+    cursor: pointer;
+}
+.card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 380px;
+    height: 340px;
+}
+.card div{
+    display: flex;
+    align-self: start;
+    align-items: center;
+    margin-top: 10px;
+    margin-left: 3px;
+    cursor: pointer;
+}
+.card div img{
+    margin-right: 10px;
+}
+.card p{
+    display: flex;
+    align-self: start;
+    margin-left: 54px;
+}
